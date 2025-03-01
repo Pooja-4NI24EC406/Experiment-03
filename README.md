@@ -2,7 +2,19 @@
 <h1>Differential Amplifier</h1>
 This reports contains the information about differential amplifier
 <h3>CONTENTS</h3>
-INTRUDUCTION
+Introduction
+Theory of Differential Amplifier
+Circuit Diagram and Working Principle
+Types of Differential Amplifiers
+Design and Analysis
+Common-Mode Rejection Ratio (CMRR)
+Frequency Response and Gain Calculation
+Applications of Differential Amplifier
+Simulation and Experimental Results
+Inference and Conclusion
+References
+
+
 
 <h3>INTRODUCTION/THEORY</h3>
   A Differential amplifier is used to amplify the difference between two input signals, while rejecting any signals that are common to both inputs. Here in differential amplifier circuit replacing resistors with MOSFET'S, The main advantage is increasing power, area and           and also disadvantage is Gain is reducing.  It is commonly used in operational amplifiers (op-amps) and is essential for applications like signal processing, noise reduction, and sensor interfacing. It consists of TWO MOSFET'S that amplify the difference between two input signals while rejecting common mode noise. Differencial amplifier is the combination of inverting and non inverting amplifier.
@@ -32,5 +44,32 @@ V2=V2/2+V2/2
 V2=(V1+V2/2 - (V1-V2)/2 ---2
 From 1 and 2
 V1+V2/2    it is common voltage(COMMON MODE SIGNAL Vcm)
-V1-V2/2    is differencial mode signal
+V1-V2/2    (DIFFERENTIAL MODE SIGNAL Vdm)
+V1=Vcm+Vdm
+V2=Vcm-Vdm
+
+<h3> WORKING PRINCIPLE </h3>
+Operating in active region for proper amplification, it can Work in Different Modes i.e, It can function in common-mode (same signal on both inputs) and differential-mode (different signals on inputs).
+The output is affected by the resistors(Rd) <h4>Vout=Vdd-Id*Rd,</h4>
+The circuit is designed symmetrically, so for this reason current is equally distrubuting
+It receives two input signals and compares them.
+It strengthens only the difference between the two inputs.
+Any noise or interference that is present in both inputs is removed
+Both transistors share the same power source and work together to balance the signals.
+The input signals control how the current splits between the two transistors, determining the output.
+The output changes based on how different the input signals are.
+It often uses feedback to stabilize gain and improve performance.
+Both transistors or mosfets work in a balanced way, reducing errors due to temperature changes.
+
+<h3>TYPES OF DIFFERENCIAL AMPLIFIER</h3>
+1.Resistive Load Differential Amplifier – Uses resistors as load (simple but low gain).
+2. Active Load Differential Amplifier – Uses MOSFET loads for higher gain.
+3. Current Mirror Differential Amplifier – Provides improved matching and increased gain.
+4. Fully Differential Amplifier – Provides both differential inputs and outputs for better noise rejection.
+
+
+<h3>ANALYSING THE QUESTION with proper formulas</h3>
+ 
+
+
 
