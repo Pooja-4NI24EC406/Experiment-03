@@ -21,4 +21,16 @@ Differencial amplifier using op-amp
 <br>In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
 To get rid of this, in amplifiers the capacitors are replaced without losing the effect of capacitors
 This is possible using differential amplifier.</br>
+V1-V2=Vd(differencial input)
+Output can be either differencial ended or single ended
+for V1=V2 Then ideally output will be 0
+V1 can also be written as 
+V1=V1/2+V1/2
+V1=V1+V2/2 + (V1-V2)/2 ---1
+Similarly
+V2=V2/2+V2/2
+V2=(V1+V2/2 - (V1-V2)/2 ---2
+From 1 and 2
+V1+V2/2    it is common voltage(COMMON MODE SIGNAL Vcm)
+V1-V2/2    is differencial mode signal
 
