@@ -104,7 +104,10 @@ groung-0V
 
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
+
  |PARAMETER INCREASED  |EFFECT ON Rd                                             |EFFECT ON Rss                                     |EFFECT ON Vout                                      |EFFECT ON Vin        
                        |EFFECT ON GAIN                                           |
+                       
 |----------------------|---------------------------------------------------------|--------------------------------------------------|----------------------------------------------------|-------------------------------------------------|---------------------------------------------------------|
+
 |Vdd                   |No direct effect, but voltage across RD increasing       |No direct effect, but ISS may need adjustment     |Increases (more headroom, higher swing)             |No direct effect, but biasing may shift      |Increases (higher VDD allows a larger RD)|
