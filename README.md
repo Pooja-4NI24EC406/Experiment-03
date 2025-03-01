@@ -12,15 +12,13 @@ The daigram where an operation amplifier is used as a differencial amplifier
 
 Differencial amplifier using op-amp
 <h4>Vo=Ad(V1-V2)</h4> 
-The voltage difference present at the inverting and non-inverting terminal gets amplified and thus an amplified output is received. Because of input configuration, all op-amps are considered to be differential amplifiers.
-
-When two inputs are applied at the two terminals the voltage difference produced resultantly will be proportional to the difference of the two applied input signals. Differential amplifier behaves as subtractor 
-circuit, that basically subtracts the two input signal. The differential amplifier can be constructed by making use of BJTs and FETs and Mosfet's.
+<br>The voltage difference present at the inverting and non-inverting terminal gets amplified and thus an amplified output is received. Because of input configuration, all op-amps are considered to be differential amplifiers.</br>
+<br>When two inputs are applied at the two terminals the voltage difference produced resultantly will be proportional to the difference of the two applied input signals. Differential amplifier behaves as subtractor circuit, that basically subtracts the two input signal. The differential amplifier can be constructed by making use of BJTs and FETs and Mosfet's.</br>
 
 <h3>CIRCUIT OF DIFFERENCIAL AMPLIFIER</h3>
 
 
-In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
+<br>In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
 To get rid of this, in amplifiers the capacitors are replaced without losing the effect of capacitors
-This is possible using differential amplifier.
+This is possible using differential amplifier.</br>
 
