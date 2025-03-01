@@ -27,6 +27,20 @@ Differencial amplifier using op-amp
 <br>The voltage difference present at the inverting and non-inverting terminal gets amplified and thus an amplified output is received. Because of input configuration, all op-amps are considered to be differential amplifiers.</br>
 <br>When two inputs are applied at the two terminals the voltage difference produced resultantly will be proportional to the difference of the two applied input signals. Differential amplifier behaves as subtractor circuit, that basically subtracts the two input signal. The differential amplifier can be constructed by making use of BJTs and FETs and Mosfet's.</br>
 
+
+<h3>CIRCUIT DAIGRAM WITH REQUIRED COMPONENTS & SPECIFICATION</h3>
+
+
+
+
+Power supply(Vdd)=3.2V
+2 Input voltage (Vicm)=1.6V
+2 Drain resistor Rd1=Rd2=Rd = 3.48K
+Rss=0.68K
+2 Vocm=1.7V
+node voltage Vp=0.6V
+groung-0V
+
 <br>In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
 To get rid of this, in amplifiers the capacitors are replaced without losing the effect of capacitors
 This is possible using differential amplifier.</br>
@@ -44,6 +58,26 @@ V1+V2/2    it is common voltage(COMMON MODE SIGNAL Vcm)
 V1-V2/2    (DIFFERENTIAL MODE SIGNAL Vdm)
 V1=Vcm+Vdm
 V2=Vcm-Vdm
+
+<h3>Key points about common mode and differential mode analysis in a differential amplifier:</h3>
+Common mode signal:
+When both inputs of the differential amplifier receive the same signal, this is considered a common-mode signal.
+Differential mode signal:
+When the inputs receive signals that are different from each other, this is considered a differential mode signal. 
+
+It is important, because of Noise rejection: A good differential amplifier should have a high "common-mode rejection ratio" (CMRR), meaning it should significantly amplify the differential mode signal while rejecting any common-mode noise present on both inputs.
+
+<h4>Analysis</h4>
+Common mode analysis:
+Calculate the output voltage when the same input signal is applied to both input terminals of the differential amplifier.
+
+
+
+Differential mode analysis:
+Calculate the output voltage when two different input signals are applied to the input terminals of the differential amplifier.   
+
+
+
 
 <h3> WORKING PRINCIPLE </h3>
 Operating in active region for proper amplification, it can Work in Different Modes i.e, It can function in common-mode (same signal on both inputs) and differential-mode (different signals on inputs).
@@ -116,3 +150,176 @@ groung-0V
 |RSS ↑	               |No direct effect                                         |	—                                               |	Improves CMRR, but excessive RSS may reduce gain	 |Differential input range may reduce             |	Can improve CMRR, but too large RSS reduces gain       |
 |W (Width) ↑           |No direct effect,but higher gm reduces needed RD same Av | No direct effect, but affects bias current       |	May decrease (if lower RD is used)                 | 	Increases input capacitance            |	Increases (since gm increases)                         |
 |L (Length) ↑          |	No direct effect, but increases output resistance      |	No direct effect                                |	Can increase (better channel control)	             |No direct effect, but speed decreases	       |Increases slightly (higher output resistance)            |
+
+IN Simple words:
+More VDD : More Vout, More Gain
+More RD : More Vout, More Gain
+More RSS : Better CMRR, but can reduce gain
+More W: More Current, Less Vout (if RD fixed), More Gain
+More L: More Gain, Better Output Resistance
+
+
+
+
+<h3>ROLE OF EACH COMPONENTS in the circuit</h3>
+M1 & M2                : Amplify the difference between inputs.
+M3 (ISS Source)        : Provides a stable tail current, after replace.
+M4 & M5 (Active Load)  :Replace resistors to improve gain, This is after replacing RD-MOSFES
+RD                     :Converts current to voltage (affects gain).
+RSS                    :Improves CMRR but can reduce gain.
+Biasing Circuit (VBIAS):Sets MOSFET operating points.
+
+<h4>Steps for LTSpice Simulation</h4>
+Step 1: Design the circuit in LTSpice
+Step 2: Set the input voltage as an AC source.
+Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.
+Step 4: Verify the current and phase inversion in the waveform.
+
+<h3>DC ANALYSIS</h3>
+
+
+
+
+
+<h3>TRANSIENT ANALYSIS</h3>
+
+
+
+
+
+
+
+<h3>AC ANALYSIS</h3>
+
+
+
+
+
+
+
+
+
+
+
+<h3>REPLACED RESISTOR(Rss) WITH A Iss(CURRENT SOURSE</h3>
+
+
+
+
+
+<h3>DC ANALYSIS</h3>
+
+
+
+
+
+
+
+<h3>TRANSIENT ANALYSIS</h3>
+
+
+
+
+
+
+
+<h3>AC ANALYSIS</h3>
+
+
+
+
+
+
+
+
+
+<h4> ADVANTAGES</h4>
+
+
+
+
+<h3>REPLACED CURRENT SOURCE WITH A MOSFET</h3>
+
+
+
+
+
+
+<h3>DC ANALYSIS</h3>
+
+
+
+
+
+
+<h3>TRANSIENT ANALYSIS</h3>
+
+
+
+
+
+
+<h3>AC ANALYSIS</h3>
+
+
+
+
+
+
+
+INFORMATION
+
+
+
+
+
+
+<h3>REPLACE Rd with MOSFET</h3>
+
+
+
+<h3>DC ANALYSIS</h3>
+
+
+
+
+<h3>TRANSIENT ANALYSIS</h3>
+
+
+
+
+
+<h3>AC ANALYSIS</h3>
+
+
+
+
+
+
+COMPARISON INFORMATION
+
+
+
+
+
+<h3>RESULT</h3>
+
+
+
+
+
+
+
+<h3>INFERENCE</h3>
+
+
+
+
+
+
+
+<h3>REFERENCE</h3>
+
+
+
+<h3>FINAL CONCLUSION</h3>
