@@ -2,7 +2,8 @@
 <h1>Differential Amplifier</h1>
 This reports contains the information about differential amplifier
 <h3>CONTENTS</h3>
-Introduction
+
+<br>Introduction
 Theory of Differential Amplifier
 Circuit Diagram and Working Principle
 Types of Differential Amplifiers
@@ -12,14 +13,14 @@ Frequency Response and Gain Calculation
 Applications of Differential Amplifier
 Simulation and Experimental Results
 Inference and Conclusion
-References
+References<br>
 
 
 
 <h3>INTRODUCTION/THEORY</h3>
   A Differential amplifier is used to amplify the difference between two input signals, while rejecting any signals that are common to both inputs. Here in differential amplifier circuit replacing resistors with MOSFET'S, The main advantage is increasing power, area and           and also disadvantage is Gain is reducing.  It is commonly used in operational amplifiers (op-amps) and is essential for applications like signal processing, noise reduction, and sensor interfacing. It consists of TWO MOSFET'S that amplify the difference between two input signals while rejecting common mode noise. Differencial amplifier is the combination of inverting and non inverting amplifier.
 
-The daigram where an operation amplifier is used as a differencial amplifier
+<br>The daigram where an operation amplifier is used as a differencial amplifier<br>
 
 
 Differencial amplifier using op-amp
@@ -33,18 +34,18 @@ Differencial amplifier using op-amp
 
 
 
-Power supply(Vdd)=3.2V
+<br>Power supply(Vdd)=3.2V
 2 Input voltage (Vicm)=1.6V
 2 Drain resistor Rd1=Rd2=Rd = 3.48K
 Rss=0.68K
 2 Vocm=1.7V
 node voltage Vp=0.6V
-groung-0V
+groung-0V<br>
 
 <br>In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
 To get rid of this, in amplifiers the capacitors are replaced without losing the effect of capacitors
-This is possible using differential amplifier.</br>
-V1-V2=Vd(differencial input)
+This is possible using differential amplifier.<br>
+<br>V1-V2=Vd(differencial input)
 Output can be either differencial ended or single ended
 for V1=V2 Then ideally output will be 0
 V1 can also be written as 
@@ -57,7 +58,7 @@ From 1 and 2
 V1+V2/2    it is common voltage(COMMON MODE SIGNAL Vcm)
 V1-V2/2    (DIFFERENTIAL MODE SIGNAL Vdm)
 V1=Vcm+Vdm
-V2=Vcm-Vdm
+V2=Vcm-Vdm<br>
 
 <h3>Key points about common mode and differential mode analysis in a differential amplifier:</h3>
 Common mode signal:
