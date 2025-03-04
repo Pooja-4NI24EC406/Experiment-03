@@ -225,6 +225,7 @@ IN Simple words:
 
 <h3>AC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/52ae2cde-485f-4538-b1f4-d24dda0be620)
 
 
 
@@ -240,7 +241,7 @@ IN Simple words:
 
 <h3>REPLACED CURRENT SOURCE WITH A MOSFET</h3>
 
-![image](https://github.com/user-attachments/assets/b79fbb73-c855-4ba5-a989-e33dcbe55331)
+![image](https://github.com/user-attachments/assets/1acbb66a-6fcf-4a9e-8a00-c218f82bca33)
 
 
 
@@ -280,6 +281,8 @@ INFORMATION
 
 <h3>REPLACE Rd with MOSFET</h3>
 
+ ![image](https://github.com/user-attachments/assets/3340a503-d272-472e-809e-54c775b8e765)
+
 
 
 <h3>DC ANALYSIS</h3>
@@ -291,6 +294,7 @@ INFORMATION
 
 <h3>TRANSIENT ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/b28f37c4-ce2b-45c0-af54-9d58b22751de)
 
 
 
@@ -298,6 +302,7 @@ INFORMATION
 
 <h3>AC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/1a3d2325-9c9f-40a5-9447-0ad37665d975)
 
 
 
