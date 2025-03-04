@@ -2,16 +2,15 @@
 <h1>Differential Amplifier</h1>
 This reports contains the information about differential amplifier
 <h3>CONTENTS</h3>
-<br>Introduction<br>
-<br>Theory of Differential Amplifier<br>
-<br>Circuit Diagram and Working Principle<br>
-<br>Types of Differential Amplifiers<br>
-<br>Design and Analysis<br>
-<br>Common-Mode Rejection Ratio (CMRR)<br>
+<br>Introduction/Theory of Differential Amplifier<br>
+<br>Circuit Diagram with specifications <br>
+<br>Working principle and Types of Differential Amplifiers<br>
+<br>Analysis of circuit Design and question <br>
+<br>Role of each components & steps for LTSpice<br>
 <br>Frequency Response and Gain Calculation<br>
 <br>Applications of Differential Amplifier<br>
-<br>Simulation and Experimental Results<br>
-<br>Inference and Conclusion<br>
+<br>Circuit daigram simulation results<br>
+<br>Result,Inference and Conclusion<br>
 <br>References<br>
 
 
@@ -41,6 +40,7 @@ This is possible using differential amplifier.</p>
 <br>node voltage Vp=0.6V<br>
 <br>groung-0V<br>
 
+![daigram](https://github.com/user-attachments/assets/a4a89b43-9b69-4de0-9994-87b0e2f803a6)
 
 
 
@@ -158,10 +158,14 @@ IN Simple words:
 <br>Biasing Circuit (VBIAS):Sets MOSFET operating points.<br>
 
 <h4>Steps for LTSpice Simulation</h4>
-<br>Step 1: Design the circuit in LTSpice<br>
+<br>Step 1: Design the circuit in LTSpice as per the circuit daigram<br>
 <br>Step 2: Set the input voltage as an AC source.<br>
 <br>Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.<br>
 <br>Step 4: Verify the current and phase inversion in the waveform.<br>
+<br>Step 5: Relace a Rss(R3) with a current and follow the same procedure<br>
+<br>Step 6: Again replace current source with a MOSFET, observe DC, transient and Ac analysis<br>
+<br>Step 7: last step is replace Rd1 and Rd2 with a mosfet and follow the same steps<br>
+   by replacing these resistors then gain is increasing so ths is the main advantages of doing these steps
 
 <h3>DC ANALYSIS</h3>
 
@@ -236,6 +240,7 @@ IN Simple words:
 
 <h3>REPLACED CURRENT SOURCE WITH A MOSFET</h3>
 
+![image](https://github.com/user-attachments/assets/b79fbb73-c855-4ba5-a989-e33dcbe55331)
 
 
 
@@ -279,21 +284,21 @@ INFORMATION
 
 <h3>DC ANALYSIS</h3>
 
-![image](https://github.com/user-attachments/assets/11d19c8d-ea71-49aa-a404-dd470745c863)
+
 
 
 
 
 <h3>TRANSIENT ANALYSIS</h3>
 
-![image](https://github.com/user-attachments/assets/844c7166-7b90-4d25-b888-6cb477cd3ab9)
+
 
 
 
 
 <h3>AC ANALYSIS</h3>
 
-![image](https://github.com/user-attachments/assets/96315170-f3c6-43c2-ad43-83b5df828d87)
+
 
 
 
