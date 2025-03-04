@@ -22,6 +22,8 @@ This reports contains the information about differential amplifier
 
 
 <br>Differencial amplifier using op-amp<br>
+
+
 Vo=Ad(V1-V2) 
 <br>The voltage difference present at the inverting and non-inverting terminal gets amplified and thus an amplified output is received. Because of input configuration, all op-amps are considered to be differential amplifiers.</br>
 <br>When two inputs are applied at the two terminals the voltage difference produced resultantly will be proportional to the difference of the two applied input signals. Differential amplifier behaves as subtractor circuit, that basically subtracts the two input signal. The differential amplifier can be constructed by making use of BJTs and FETs and Mosfet's.</br>
@@ -31,7 +33,6 @@ Vo=Ad(V1-V2)
 <p>In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
 so for this reason, in amplifiers the capacitors are replaced without losing the effect of capacitors
 This is possible using differential amplifier.</p>
-
 <br>Power supply(Vdd)=3.2V<br>
 <br>2 Input voltage (Vicm)=1.6V<br>
 <br>2 Drain resistor Rd1=Rd2=Rd = 3.48K<br>
@@ -41,9 +42,6 @@ This is possible using differential amplifier.</p>
 <br>groung-0V<br>
 
 ![daigram](https://github.com/user-attachments/assets/a4a89b43-9b69-4de0-9994-87b0e2f803a6)
-
-
-
 
 <br>V1-V2=Vd(differencial input)<br>
 <br>Output can be either differencial ended or single ended<br>
@@ -63,32 +61,27 @@ From 1 and 2
 
 <h3>Key points about common mode and differential mode analysis in a differential amplifier:</h3>
 <br><h4>Common mode signal:<h4></h4>When both inputs of the differential amplifier receive the same signal, this is considered a common-mode signal.<br>
-
 <br><h4>Differential mode signal:</h4>When the inputs receive signals that are different from each other, this is considered a differential mode signal. 
 It is important, because of Noise rejection: A good differential amplifier should have a high "common-mode rejection ratio" (CMRR), meaning it should significantly amplify the differential mode signal while rejecting any common-mode noise present on both inputs.<br>
 
 <h4>Analysis</h4>
 <br><h4>Common mode analysis:</h4>Calculate the output voltage when the same input signal is applied to both input terminals of the differential amplifier.<br>
-
-
-
 <br><h4>Differential mode analysis:</h4>Calculate the output voltage when two different input signals are applied to the input terminals of the differential amplifier.<br>   
-
 
 
 
 <h3> WORKING PRINCIPLE </h3>
 <br>Operating in active region for proper amplification, it can Work in Different Modes i.e, It can function in common-mode (same signal on both inputs) and differential-mode (different signals on inputs).<br>
-<br>1. The output is affected by the resistors(Rd) Vout=Vdd-Id*Rd.<br>
-<br>2. The circuit is designed symmetrically, so for this reason current is equally distrubuting<br>
-<br>3. It receives two input signals and compares them.<br>
-<br>4. It strengthens only the difference between the two inputs.<br>
-<br>5. Any noise or interference that is present in both inputs is removed<br>
-<br>6. Both transistors share the same power source and work together to balance the signals.<br>
-<br>7. The input signals control how the current splits between the two transistors, determining the output.<br>
-<br>8. The output changes based on how different the input signals are.<br>
-<br>9. It often uses feedback to stabilize gain and improve performance.<br>
-<br>10.Both transistors or mosfets work in a balanced way, reducing errors due to temperature changes.<br>
+<br>The output is affected by the resistors(Rd) Vout=Vdd-Id*Rd.<br>
+<br>The circuit is designed symmetrically, so for this reason current is equally distrubuting<br>
+<br>It receives two input signals and compares them.<br>
+<br>It strengthens only the difference between the two inputs.<br>
+<br>Any noise or interference that is present in both inputs is removed<br>
+<br>Both transistors share the same power source and work together to balance the signals.<br>
+<br> The input signals control how the current splits between the two transistors, determining the output.<br>
+<br>The output changes based on how different the input signals are.<br>
+<br>It often uses feedback to stabilize gain and improve performance.<br>
+<br>Both transistors or mosfets work in a balanced way, reducing errors due to temperature changes.<br>
 
 <br><h3>TYPES OF DIFFERENCIAL AMPLIFIER</h3><br>
 <br>1.Resistive Load Differential Amplifier – Uses resistors as load (simple but low gain).<br>
@@ -114,15 +107,12 @@ Given,
 <br>Id=0.875m/2=0.43mA<br>
 <br>Rd=Vdd-Vocm/Id=3.2-1.7/0.43m=3.48k<br>
 <br>Rss=Vp/Iss=0.6/0.875m=0.68k<br>
-
 <br>Values of each components:<br>
 <p>Rd=3.48K
 Rss=0.68K
 Iss=0.875mA
 Id=43mA</p>
 <br>Vdd=3.2V P<=2.8mW Vicm=1.6V Vocm=1.7V Vp=0.6V<br>
-
-
 
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
@@ -145,8 +135,6 @@ IN Simple words:
 <br>More RSS : Better CMRR, but can reduce gain<br>
 <br>More W: More Current, Less Vout (if RD fixed), More Gain<br>
 <br>More L: More Gain, Better Output Resistance<br>
-
-
 
 
 <h3>ROLE OF EACH COMPONENTS in the circuit</h3>
@@ -231,14 +219,6 @@ IN Simple words:
 
 
 
-
-
-
-<h4> ADVANTAGES</h4>
-
-
-
-
 <h3>REPLACED CURRENT SOURCE WITH A MOSFET</h3>
 
 ![image](https://github.com/user-attachments/assets/1acbb66a-6fcf-4a9e-8a00-c218f82bca33)
@@ -272,7 +252,7 @@ IN Simple words:
 
 
 
-INFORMATION
+
 
 
 
@@ -337,11 +317,12 @@ The circuit is widely used in modern analog and mixed-signal designs and also it
 And main disadvantage is reducing area and power by using this differential amplifier 
 
 
-
-
-
 <h3>FINAL CONCLUSION</h3>
 The differential amplifier is a fundamental circuit in analog electronics, crucial for applications in op-amps, instrumentation, and communication systems. With proper design, high gain, low noise, and excellent common-mode rejection can be achieved. Simulation and experimental results confirm its effectiveness in signal amplification and noise reduction.
 
 
 <h3>REFERENCE</h3>
+
+https://electronicscoach.com/differential-amplifier.html
+
+https://chatgpt.com/share/67c2e955-8f2c-8013-bbcd-2ba0aba04355
