@@ -165,11 +165,15 @@ IN Simple words:
 
 <h3>DC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/0db3dfd9-b2fd-4a00-b877-9e643d963033)
+
 
 
 
 
 <h3>TRANSIENT ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/b4bdb08b-d146-47c8-a1df-6960ef73b312)
 
 
 
@@ -179,6 +183,7 @@ IN Simple words:
 
 <h3>AC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/d47373d5-f0be-4c65-80ff-6414871a317b)
 
 
 
@@ -191,12 +196,14 @@ IN Simple words:
 
 <h3>REPLACED RESISTOR(Rss) WITH A Iss(CURRENT SOURSE</h3>
 
+![image](https://github.com/user-attachments/assets/f0ee53a8-b699-47e9-9029-6b550eff3532)
 
 
 
 
 <h3>DC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/badf0034-32d8-423b-9fcb-9b4fef129275)
 
 
 
@@ -205,6 +212,7 @@ IN Simple words:
 
 <h3>TRANSIENT ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/c8f6a61d-a717-4fcc-9062-dc455189f017)
 
 
 
@@ -240,8 +248,10 @@ IN Simple words:
 
 
 
+
 <h3>TRANSIENT ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/0206307b-9589-4af4-8994-18f101411cfe)
 
 
 
@@ -249,6 +259,7 @@ IN Simple words:
 
 <h3>AC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/98fb0bb8-28d4-490a-8e27-8ed34223ec95)
 
 
 
@@ -268,17 +279,21 @@ INFORMATION
 
 <h3>DC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/11d19c8d-ea71-49aa-a404-dd470745c863)
+
 
 
 
 <h3>TRANSIENT ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/844c7166-7b90-4d25-b888-6cb477cd3ab9)
 
 
 
 
 <h3>AC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/96315170-f3c6-43c2-ad43-83b5df828d87)
 
 
 
