@@ -158,10 +158,10 @@ IN Simple words:
 <br>Biasing Circuit (VBIAS):Sets MOSFET operating points.<br>
 
 <h4>Steps for LTSpice Simulation</h4>
-Step 1: Design the circuit in LTSpice
-Step 2: Set the input voltage as an AC source.
-Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.
-Step 4: Verify the current and phase inversion in the waveform.
+<br>Step 1: Design the circuit in LTSpice<br>
+<br>Step 2: Set the input voltage as an AC source.<br>
+<br>Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.<br>
+<br>Step 4: Verify the current and phase inversion in the waveform.<br>
 
 <h3>DC ANALYSIS</h3>
 
