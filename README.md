@@ -3,27 +3,27 @@
 This reports contains the information about differential amplifier
 <h3>CONTENTS</h3>
 
-<br>Introduction
-Theory of Differential Amplifier
-Circuit Diagram and Working Principle
-Types of Differential Amplifiers
-Design and Analysis
-Common-Mode Rejection Ratio (CMRR)
-Frequency Response and Gain Calculation
-Applications of Differential Amplifier
-Simulation and Experimental Results
-Inference and Conclusion
-References<br>
+<br>Introduction<br>
+<br>Theory of Differential Amplifier<br>
+<br>Circuit Diagram and Working Principle<br>
+<br>Types of Differential Amplifiers<br>
+<br>Design and Analysis<br>
+<br>Common-Mode Rejection Ratio (CMRR)<br>
+<br>Frequency Response and Gain Calculation<br>
+<br>Applications of Differential Amplifier<br>
+<br>Simulation and Experimental Results<br>
+<br>Inference and Conclusion<br>
+<br>References<br>
 
 
 
 <h3>INTRODUCTION/THEORY</h3>
-  A Differential amplifier is used to amplify the difference between two input signals, while rejecting any signals that are common to both inputs. Here in differential amplifier circuit replacing resistors with MOSFET'S, The main advantage is increasing power, area and           and also disadvantage is Gain is reducing.  It is commonly used in operational amplifiers (op-amps) and is essential for applications like signal processing, noise reduction, and sensor interfacing. It consists of TWO MOSFET'S that amplify the difference between two input signals while rejecting common mode noise. Differencial amplifier is the combination of inverting and non inverting amplifier.
+  A Differential amplifier is used to amplify the difference between two input signals, while rejecting any signals that are common to both inputs. Here in differential amplifier circuit replacing resistors with MOSFET'S, The main advantage is increasing gain and disadvantage is reducing/dicreasing area and power.  It is commonly used in operational amplifiers (op-amps) and is essential for applications like signal processing, noise reduction, and sensor interfacing. It consists of TWO MOSFET'S that amplify the difference between two input signals while rejecting common mode noise. Differencial amplifier is the combination of inverting and non inverting amplifier.
 
 <br>The daigram where an operation amplifier is used as a differencial amplifier<br>
 
 
-Differencial amplifier using op-amp
+<br>Differencial amplifier using op-amp<br>
 <h4>Vo=Ad(V1-V2)</h4> 
 <br>The voltage difference present at the inverting and non-inverting terminal gets amplified and thus an amplified output is received. Because of input configuration, all op-amps are considered to be differential amplifiers.</br>
 <br>When two inputs are applied at the two terminals the voltage difference produced resultantly will be proportional to the difference of the two applied input signals. Differential amplifier behaves as subtractor circuit, that basically subtracts the two input signal. The differential amplifier can be constructed by making use of BJTs and FETs and Mosfet's.</br>
@@ -34,64 +34,65 @@ Differencial amplifier using op-amp
 
 
 
-<br>Power supply(Vdd)=3.2V
-2 Input voltage (Vicm)=1.6V
-2 Drain resistor Rd1=Rd2=Rd = 3.48K
-Rss=0.68K
-2 Vocm=1.7V
-node voltage Vp=0.6V
-groung-0V<br>
+<br>Power supply(Vdd)=3.2V<br>
+<br>2 Input voltage (Vicm)=1.6V<br>
+<br>2 Drain resistor Rd1=Rd2=Rd = 3.48K<br>
+<br>Rss=0.68K<br>
+<br>2 Vocm=1.7V<br>
+<br>node voltage Vp=0.6V<br>
+<br>groung-0V<br>
 
-<br>In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
-To get rid of this, in amplifiers the capacitors are replaced without losing the effect of capacitors
-This is possible using differential amplifier.<br>
-<br>V1-V2=Vd(differencial input)
-Output can be either differencial ended or single ended
-for V1=V2 Then ideally output will be 0
+<p>In an Integrated Circuit(IC) high value capacitor is difficult to fabricate in IC
+so for this reason, in amplifiers the capacitors are replaced without losing the effect of capacitors
+This is possible using differential amplifier.</p>
+<br>V1-V2=Vd(differencial input)<br>
+<br>Output can be either differencial ended or single ended<br>
+<br>for V1=V2 Then ideally output will be 0
 V1 can also be written as 
-V1=V1/2+V1/2
-V1=V1+V2/2 + (V1-V2)/2 ---1
-Similarly
-V2=V2/2+V2/2
-V2=(V1+V2/2 - (V1-V2)/2 ---2
+<br>V1=V1/2+V1/2<br>
+<br>V1=V1+V2/2 + (V1-V2)/2 ---1<br>
+Similarly,
+<br>V2=V2/2+V2/2<br>
+<br>V2=(V1+V2/2 - (V1-V2)/2 ---2<br>
+
 From 1 and 2
-V1+V2/2    it is common voltage(COMMON MODE SIGNAL Vcm)
-V1-V2/2    (DIFFERENTIAL MODE SIGNAL Vdm)
-V1=Vcm+Vdm
-V2=Vcm-Vdm<br>
+<br>V1+V2/2    it is common voltage(COMMON MODE SIGNAL Vcm)<br>
+<br>V1-V2/2    (DIFFERENTIAL MODE SIGNAL Vdm)<br>
+<br>V1=Vcm+Vdm<br>
+<br>V2=Vcm-Vdm<br>
 
 <h3>Key points about common mode and differential mode analysis in a differential amplifier:</h3>
-Common mode signal:
-When both inputs of the differential amplifier receive the same signal, this is considered a common-mode signal.
-Differential mode signal:
-When the inputs receive signals that are different from each other, this is considered a differential mode signal. 
+<br>Common mode signal:<br>
+<br>When both inputs of the differential amplifier receive the same signal, this is considered a common-mode signal.<br>
 
-It is important, because of Noise rejection: A good differential amplifier should have a high "common-mode rejection ratio" (CMRR), meaning it should significantly amplify the differential mode signal while rejecting any common-mode noise present on both inputs.
+<br>Differential mode signal:<br>
+<br>When the inputs receive signals that are different from each other, this is considered a differential mode signal. 
+It is important, because of Noise rejection: A good differential amplifier should have a high "common-mode rejection ratio" (CMRR), meaning it should significantly amplify the differential mode signal while rejecting any common-mode noise present on both inputs.<br>
 
 <h4>Analysis</h4>
-Common mode analysis:
-Calculate the output voltage when the same input signal is applied to both input terminals of the differential amplifier.
+<br>Common mode analysis:<br>
+<br>Calculate the output voltage when the same input signal is applied to both input terminals of the differential amplifier.<br>
 
 
 
-Differential mode analysis:
-Calculate the output voltage when two different input signals are applied to the input terminals of the differential amplifier.   
+<br>Differential mode analysis:<br>
+<br>Calculate the output voltage when two different input signals are applied to the input terminals of the differential amplifier.<br>   
 
 
 
 
 <h3> WORKING PRINCIPLE </h3>
-Operating in active region for proper amplification, it can Work in Different Modes i.e, It can function in common-mode (same signal on both inputs) and differential-mode (different signals on inputs).
-The output is affected by the resistors(Rd) <h4>Vout=Vdd-Id*Rd,</h4>
-The circuit is designed symmetrically, so for this reason current is equally distrubuting
-It receives two input signals and compares them.
-It strengthens only the difference between the two inputs.
-Any noise or interference that is present in both inputs is removed
-Both transistors share the same power source and work together to balance the signals.
-The input signals control how the current splits between the two transistors, determining the output.
-The output changes based on how different the input signals are.
-It often uses feedback to stabilize gain and improve performance.
-Both transistors or mosfets work in a balanced way, reducing errors due to temperature changes.
+<br>Operating in active region for proper amplification, it can Work in Different Modes i.e, It can function in common-mode (same signal on both inputs) and differential-mode (different signals on inputs).<br>
+<br>The output is affected by the resistors(Rd) <h4>Vout=Vdd-Id*Rd,</h4><br>
+<br>The circuit is designed symmetrically, so for this reason current is equally distrubuting<br>
+<br>It receives two input signals and compares them.<br>
+<br>It strengthens only the difference between the two inputs.<br>
+<br>Any noise or interference that is present in both inputs is removed<br>
+<br>Both transistors share the same power source and work together to balance the signals.<br>
+<br>The input signals control how the current splits between the two transistors, determining the output.<br>
+<br>The output changes based on how different the input signals are.<br>
+<br>It often uses feedback to stabilize gain and improve performance.<br>
+<br>Both transistors or mosfets work in a balanced way, reducing errors due to temperature changes.<br>
 
 <h3>TYPES OF DIFFERENCIAL AMPLIFIER</h3>
 1.Resistive Load Differential Amplifier – Uses resistors as load (simple but low gain).
