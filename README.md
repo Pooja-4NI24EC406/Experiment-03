@@ -324,15 +324,24 @@ COMPARISON INFORMATION
 
 
 <h3>INFERENCE</h3>
+The differential amplifier perfectly amplifies differential signals while rejecting noise.
+
+operating points is set as required values.
+
+CMRR is enhanced using current sources and active loads.
+
+MOSFET based designs offer better power efficiency and high input impedance.
+
+The circuit is widely used in modern analog and mixed-signal designs and also it is used to increase the gain
+
+And main disadvantage is reducing area and power by using this differential amplifier 
 
 
-
-
-
-
-
-<h3>REFERENCE</h3>
 
 
 
 <h3>FINAL CONCLUSION</h3>
+The differential amplifier is a fundamental circuit in analog electronics, crucial for applications in op-amps, instrumentation, and communication systems. With proper design, high gain, low noise, and excellent common-mode rejection can be achieved. Simulation and experimental results confirm its effectiveness in signal amplification and noise reduction.
+
+
+<h3>REFERENCE</h3>
