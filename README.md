@@ -152,6 +152,7 @@ Id=0.43mA</p>
 <h4>Max swing=1.558V</h4>
 <h4>Voutmin=0.91V</h4>
 <h4>Voutmax=1.725V</h4>
+
 <h3>Vincm Analysis</h3>
 
 ![image](https://github.com/user-attachments/assets/59d99546-3fa6-4090-a94e-797750d2b875)
@@ -217,11 +218,14 @@ When we replacing RSS with a current source, the common-mode rejection ratio (CM
 
 ![image](https://github.com/user-attachments/assets/c8f6a61d-a717-4fcc-9062-dc455189f017)
 
-<p><h4>Vincmmin=1.06V</h4>
+<h4>Vincmmin=1.06V</h4>
 <h4>Vincmmax=2.156v</h4>
 <h4>Max swing=1.558V</h4>
 <h4>Voutmin=0.91V</h4>
-<h4>Voutmax=1.725V</h4></p>
+<h4>Voutmax=1.725V</h4>
+<h3>Vincm Analysis</h3>
+
+<h3>Vincm Analysis</h3>
 
 ![image](https://github.com/user-attachments/assets/211d9fc5-ff5c-44f1-af71-ed5388ced160)
 
@@ -265,6 +269,9 @@ Max swing=1.558V
 Voutmin=0.91V
 Voutmax=1.725V</h4></p>
 
+<h3>Vincm Analysis</h3>
+
+![image](https://github.com/user-attachments/assets/6775f608-d9df-43d3-a068-819464842942)
 
 
 
@@ -306,8 +313,15 @@ Replacing ISS with a MOSFET and RD1, RD2 with MOSFETs transforms the differentia
 
 ![image](https://github.com/user-attachments/assets/b28f37c4-ce2b-45c0-af54-9d58b22751de)
 
+<h4>Vincmmin=1.06V</h4>
+<h4>Vincmmax=2.156v</h4>
+<h4>Max swing=1.558V</h4>
+<h4>Voutmin=0.91V</h4>
+<h4>Voutmax=1.725V</h4>
 
+<h3>Vincm Analysis</h3>
 
+![image](https://github.com/user-attachments/assets/b954447d-8d24-48ca-923c-d806273467f4)
 
 
 <h3>AC ANALYSIS</h3>
@@ -345,7 +359,13 @@ Simulated using LTSpice, simulated the circuit, Vdd=3.2V,
 Rss=0.68K
 Iss=0.875mA
 Id=0.43mA
-  Av=10.4</p>
+  Av=10.4
+<br>  Vincmmin=1.06V
+<br>Vincmmax=2.156v<br>
+<br>Max swing=1.558V<br>
+<br>Voutmin=0.91V<br>
+<br>>Voutmax=1.725V<br>
+
   <br>theoritically we setted as perfectly same as possible.
 
 Observed differential gain of approximately 10.4dB.Experimental Observations ( MOSFETs)
