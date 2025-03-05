@@ -184,7 +184,7 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 
 ![image](https://github.com/user-attachments/assets/f0ee53a8-b699-47e9-9029-6b550eff3532)
 
-
+When we replacing RSS with a current source, the common-mode rejection ratio (CMRR) improves significantly because the current source provides high impedance, which enhances circuit balance. This results in better gain stability, improved linearity, and reduced dependence on resistor mismatches.
 
 
 <h3>DC ANALYSIS</h3>
@@ -217,6 +217,8 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <h3>REPLACED CURRENT SOURCE WITH A MOSFET</h3>
 
 ![image](https://github.com/user-attachments/assets/1acbb66a-6fcf-4a9e-8a00-c218f82bca33)
+
+When we replace the current source with a MOSFET (acting as an active current source), the circuit achieves better current regulation, higher output impedance, and improved CMRR. The MOSFET provides dynamic resistance, reducing variations due to temperature or component mismatches. This leads to better differential gain and improved linearity compared to a simple resistor or current source. However, proper biasing is crucial to ensure stable operation.
 
 
 
@@ -259,6 +261,8 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <h3>REPLACE Rd with MOSFET</h3>
 
  ![image](https://github.com/user-attachments/assets/3340a503-d272-472e-809e-54c775b8e765)
+
+Replacing ISS with a MOSFET and RD1, RD2 with MOSFETs transforms the differential amplifier into a fully active-loaded differential amplifier.Gain is increasing more.
 
 
 
