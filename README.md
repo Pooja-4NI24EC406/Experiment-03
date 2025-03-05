@@ -1,7 +1,7 @@
 # Experiment-03
 <h1>Differential Amplifier</h1>
-This reports contains the information about differential amplifier
-<h3>CONTENTS</h3>
+This reports contains the information about differential amplifier ant it contains the below CONTENTS:
+
 <br>Introduction/Theory of Differential Amplifier<br>
 <br>Circuit Diagram with specifications <br>
 <br>Working principle and Types of Differential Amplifiers<br>
@@ -135,24 +135,12 @@ Id=0.43mA</p>
 
 ![image](https://github.com/user-attachments/assets/b4bdb08b-d146-47c8-a1df-6960ef73b312)
 
-
-
-
-
-
-
-<h3>AC ANALYSIS</h3>
-
-![image](https://github.com/user-attachments/assets/d47373d5-f0be-4c65-80ff-6414871a317b)
-
-Ac gain = 20log10(328.9*10^3/99.25*10^3)
-<br>10.406<br>
 <br>Vincm(min)=Vth+Vp<br>
 <br>          =0.36V+0.6V=0.96<br>
 <br>Vincm(max)=Vdd-Rd×Iss/2+Vth<br>
-<br>    =3.2-3436.96×0.875m/2+0.46=2.156V<br>
-<br>max swing  (Vincm(min)-Vincm(max))/2<br>
-<br>0.96-2.156/2=1.558V<br>
+<br>Vincm(max) =3.2-3436.96×0.875m/2+0.46=2.156V<br>
+<br>max swing = (Vincm(min)+Vincm(max))/2<br>
+<br>max swing=0.96-2.156/2=1.558V<br>
 
 <br>Vout(min)=Vov+Vp<br>
 <br>Vov=0.45V.... 0.45+0.36=0.91V<br>
@@ -164,6 +152,20 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <h4>Max swing=1.558V</h4>
 <h4>Voutmin=0.91V</h4>
 <h4>Voutmax=1.725V</h4>
+<h3>Vincm Analysis</h3>
+
+![image](https://github.com/user-attachments/assets/59d99546-3fa6-4090-a94e-797750d2b875)
+
+
+
+
+<h3>AC ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/d47373d5-f0be-4c65-80ff-6414871a317b)
+
+Ac gain = 20log10(328.9*10^3/99.25*10^3)
+<br>10.406<br>
+
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
 | PARAMETER INCREASED | EFFECT ON GAIN | EFFECT ON Rss | EFFECT ON Vout | EFFECT ON Vin |
@@ -174,7 +176,7 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 | W/L (Width/Length) ↑ | Can improve CMRR, but too large RSS reduces gain | No direct effect, but affects bias current | May decrease (if lower RD is used) | Increases input |
 | Capacitance ↑ | Increases (since gm increases) | No direct effect | Can increase (better channel control) | No direct effect, and |
 | Speed decreases | Increases slightly (higher output resistance) | No direct effect | | |
-
+<br>In simple words:<br>
 <br>More VDD : More Vout, More Gain<br>
 <br>More RD : More Vout, More Gain<br>
 <br>More RSS : Better CMRR, but can reduce gain<br>
@@ -257,6 +259,11 @@ When we replace the current source with a MOSFET (acting as an active current so
 
 ![image](https://github.com/user-attachments/assets/0206307b-9589-4af4-8994-18f101411cfe)
 
+<p><h4>Vincmmin=1.06V
+Vincmmax=2.156v
+Max swing=1.558V
+Voutmin=0.91V
+Voutmax=1.725V</h4></p>
 
 
 
