@@ -298,6 +298,14 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 |Design Complexity          |	Moderate (Requires ISS circuit)	           | More Complex (Needs biasing for both MOSFET ISS & active loads)
 
 <h3>RESULT</h3>
+After designing, analyzing, and simulating this circuit,
+
+Current is calculated , theorical value is 0.43uA, after simulating in LTspice we get or setted as 0.43uA.The circuit provided a significant voltage amplification.
+
+The gain was calculated and verified using LTSpice simulation.
+The output waveform was inverted with respect to the input.
+
+The voltage gain depends on the transconductance and drain resistor Av=-Gm*Rd. LTSpice simulation results match with theoretical calculations.
 Simulated using LTSpice, simulated the circuit, Vdd=3.2V, 
   P<=2.8mW        
   Vicm=1.6V
@@ -309,13 +317,10 @@ Id=0.43mA
   Av=10.4</p>
   <br>theoritically we setted as perfectly same as possible.
 
-Observed differential gain of approximately 10.4dB.
-
-Experimental Observations ( MOSFETs)
+Observed differential gain of approximately 10.4dB.Experimental Observations ( MOSFETs)
 
 The circuit performed as expected, amplifying differential input while rejecting common-mode signals.
 
-Higher gain achieved using current mirror load.
 
 
 
@@ -335,7 +340,7 @@ And main disadvantage is reducing area and power by using this differential ampl
 
 
 <h3>FINAL CONCLUSION</h3>
-The differential amplifier is a fundamental circuit in analog electronics, crucial for applications in op-amps, instrumentation, and communication systems. With proper design, high gain, low noise, and excellent common-mode rejection can be achieved. Simulation and experimental results confirm its effectiveness in signal amplification and noise reduction.
+After simulating this circuit we get to know that,The differential amplifier is a fundamental circuit in analog electronics, crucial for applications in op-amps, instrumentation, and communication systems. With proper design, high gain, low noise, and excellent common-mode rejection can be achieved. Simulation and experimental results confirm its effectiveness in signal amplification and noise reduction.
 
 
 <h3>REFERENCE</h3>
