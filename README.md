@@ -10,6 +10,7 @@ This reports contains the information about differential amplifier
 <br>Frequency Response and Gain Calculation<br>
 <br>Applications of Differential Amplifier<br>
 <br>Circuit daigram simulation results<br>
+<br>Comparison table<br>
 <br>Result,Inference and Conclusion<br>
 <br>References<br>
 
@@ -61,8 +62,6 @@ From 1 and 2
 <br><h4>Common mode signal:<h4></h4>When both inputs of the differential amplifier receive the same signal, this is considered a common-mode signal.<br>
 <br><h4>Differential mode signal:</h4>When the inputs receive signals that are different from each other, this is considered a differential mode signal. 
 It is important, because of Noise rejection: A good differential amplifier should have a high "common-mode rejection ratio" (CMRR), meaning it should significantly amplify the differential mode signal while rejecting any common-mode noise present on both inputs.<br>
-
-<h4>Analysis</h4>
 <br><h4>Common mode analysis:</h4>Calculate the output voltage when the same input signal is applied to both input terminals of the differential amplifier.<br>
 <br><h4>Differential mode analysis:</h4>Calculate the output voltage when two different input signals are applied to the input terminals of the differential amplifier.<br>   
 
@@ -114,8 +113,17 @@ Id=0.43mA</p>
 
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
-|PARAMETER INCREASED   | EFFECT ON Rd                                             |EFFECT ON Rss                                     |EFFECT ON Vout                                      |EFFECT ON Vin        
-                       |EFFECT ON GAIN                                           |
+| PARAMETER INCREASED | EFFECT ON GAIN | EFFECT ON Rss | EFFECT ON Vout | EFFECT ON Vin |
+|---------------------|---------------|--------------|---------------|--------------|
+| Vdd ↑ | No direct effect, but voltage across RD increases | No direct effect, but ISS may need adjustment | Increases (more headroom, higher swing) | No direct effect, but |
+| RD ↑ | Increases (higher VDD allows a larger RD) | No direct effect, but affects current balance | Increases (higher gain, larger swing) | No direct effect |
+| ISS ↑ | No direct effect | Improves CMRR, but excessive ISS may reduce gain | Improves CMRR, but excessive ISS may reduce gain | Differential input range |
+| W/L (Width/Length) ↑ | Can improve CMRR, but too large RSS reduces gain | No direct effect, but affects bias current | May decrease (if lower RD is used) | Increases input |
+| Capacitance ↑ | Increases (since gm increases) | No direct effect | Can increase (better channel control) | No direct effect, and |
+| Speed decreases | Increases slightly (higher output resistance) | No direct effect | | |
+
+| PARAMETER INCREASED   | EFFECT ON Rd                                            | EFFECT ON Rss                                     | EFFECT ON Vout                                      | EFFECT ON Vin        
+                       | EFFECT ON GAIN                                           |
                        
 |----------------------|---------------------------------------------------------|--------------------------------------------------|----------------------------------------------------|-------------------------------------------------|---------------------------------------------------------|
 
@@ -124,7 +132,7 @@ Id=0.43mA</p>
                        |Increases (Av = -gm * RD)                                |
 |RSS ↑	               |No direct effect                                         |	—                                               |	Improves CMRR, but excessive RSS may reduce gain	 |Differential input range may reduce             |	Can improve CMRR, but too large RSS reduces gain       |
 |W (Width) ↑           |No direct effect,but higher gm reduces needed RD same Av | No direct effect, but affects bias current       |	May decrease (if lower RD is used)                 | 	Increases input capacitance            |	Increases (since gm increases)                         |
-|L (Length) ↑          |	No direct effect, but increases output resistance      |	No direct effect                                |	Can increase (better channel control)	             |No direct effect, but speed decreases	       |Increases slightly (higher output resistance)            |
+|L (Length) ↑          |	No direct effect, but increases output resistance      |	No direct effect                                |	Can increase (better channel control)	             |No direct effect, but speed decreases	       |Increases slightly (higher output resistance)            |||
 
 <br>More VDD : More Vout, More Gain<br>
 <br>More RD : More Vout, More Gain<br>
