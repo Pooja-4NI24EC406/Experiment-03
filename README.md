@@ -147,7 +147,9 @@ Id=0.43mA</p>
 
 Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <br>10.406<br>
-
+<br>Vincmmin=1.06V<br>
+<br>Vincmmax=2.156v<br>
+<br>Max swing=1.558V<br>
 
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
