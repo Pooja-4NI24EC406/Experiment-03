@@ -159,11 +159,11 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <br>Vou(max)=Vdd-Id×Rd<br>
 <br>3.2-0.43m×3.43k=1.725V<br>
 
-<br><h4>Vincmmin=1.06V</h4><br>
-<br><h4>Vincmmax=2.156v</h4><br>
-<br><h4>Max swing=1.558V</h4><br>
-<br><h4>Voutmin=0.91V</h4><br>
-<br><h4>Voutmax=1.725V</h4><br>
+<h4>Vincmmin=1.06V</h4>
+<h4>Vincmmax=2.156v</h4>
+<h4>Max swing=1.558V</h4>
+<h4>Voutmin=0.91V</h4>
+<h4>Voutmax=1.725V</h4>
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
 | PARAMETER INCREASED | EFFECT ON GAIN | EFFECT ON Rss | EFFECT ON Vout | EFFECT ON Vin |
@@ -215,8 +215,13 @@ When we replacing RSS with a current source, the common-mode rejection ratio (CM
 
 ![image](https://github.com/user-attachments/assets/c8f6a61d-a717-4fcc-9062-dc455189f017)
 
+<p><h4>Vincmmin=1.06V</h4>
+<h4>Vincmmax=2.156v</h4>
+<h4>Max swing=1.558V</h4>
+<h4>Voutmin=0.91V</h4>
+<h4>Voutmax=1.725V</h4></p>
 
-
+![image](https://github.com/user-attachments/assets/211d9fc5-ff5c-44f1-af71-ed5388ced160)
 
 
 
