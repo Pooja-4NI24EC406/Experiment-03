@@ -6,10 +6,9 @@ This reports contains the information about differential amplifier
 <br>Circuit Diagram with specifications <br>
 <br>Working principle and Types of Differential Amplifiers<br>
 <br>Analysis of circuit Design and question <br>
-<br>Role of each components & steps for LTSpice<br>
-<br>Frequency Response and Gain Calculation<br>
-<br>Applications of Differential Amplifier<br>
+<br>Steps for LTSpice<br>
 <br>Circuit daigram simulation results<br>
+<br>Role of each components<br>
 <br>Comparison table<br>
 <br>Result,Inference and Conclusion<br>
 <br>References<br>
@@ -174,6 +173,31 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <br>10.406<br>
 
 
+<h4>ANALYSING the circuit by using LTSpice</h4>
+
+| PARAMETER INCREASED | EFFECT ON GAIN | EFFECT ON Rss | EFFECT ON Vout | EFFECT ON Vin |
+|---------------------|---------------|--------------|---------------|--------------|
+| Vdd ↑ | No direct effect, but voltage across RD increases | No direct effect, but ISS may need adjustment | Increases (more headroom, higher swing) | No direct effect, but |
+| RD ↑ | Increases (higher VDD allows a larger RD) | No direct effect, but affects current balance | Increases (higher gain, larger swing) | No direct effect |
+| ISS ↑ | No direct effect | Improves CMRR, but excessive ISS may reduce gain | Improves CMRR, but excessive ISS may reduce gain | Differential input range |
+| W/L (Width/Length) ↑ | Can improve CMRR, but too large RSS reduces gain | No direct effect, but affects bias current | May decrease (if lower RD is used) | Increases input |
+| Capacitance ↑ | Increases (since gm increases) | No direct effect | Can increase (better channel control) | No direct effect, and |
+| Speed decreases | Increases slightly (higher output resistance) | No direct effect | | |
+
+<br>More VDD : More Vout, More Gain<br>
+<br>More RD : More Vout, More Gain<br>
+<br>More RSS : Better CMRR, but can reduce gain<br>
+<br>More W: More Current, Less Vout (if RD fixed), More Gain<br>
+<br>More L: More Gain, Better Output Resistance<br>
+
+
+<h3>ROLE OF EACH COMPONENTS in the circuit</h3>
+<br>M1 & M2                : Amplify the difference between inputs.<br>
+<br>M3 (ISS Source)        : Provides a stable tail current, after replace.<br>
+<br>M4 & M5 (Active Load)  :Replace resistors to improve gain, This is after replacing RD-MOSFETS<br>
+<br>RD                     :Converts current to voltage (affects gain).<br>
+<br>RSS                    :Improves CMRR but can reduce gain.<br>
+<br>Biasing Circuit (VBIAS):Sets MOSFET operating points.<br>
 
 
 
