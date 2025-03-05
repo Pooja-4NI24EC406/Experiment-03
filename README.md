@@ -20,11 +20,9 @@ This reports contains the information about differential amplifier
 
 <br><h4>The daigram where an operation amplifier is used as a differencial amplifier</h4><br>
 
+![image](https://github.com/user-attachments/assets/f8a08798-46a2-4d7f-a7f1-898239cb5f2c)
 
-<br>Differencial amplifier using op-amp<br>
-
-
-Vo=Ad(V1-V2) 
+<br>Differencial amplifier using op-amp Vo=Ad(V1-V2)<br> 
 <br>The voltage difference present at the inverting and non-inverting terminal gets amplified and thus an amplified output is received. Because of input configuration, all op-amps are considered to be differential amplifiers.</br>
 <br>When two inputs are applied at the two terminals the voltage difference produced resultantly will be proportional to the difference of the two applied input signals. Differential amplifier behaves as subtractor circuit, that basically subtracts the two input signal. The differential amplifier can be constructed by making use of BJTs and FETs and Mosfet's.</br>
 
@@ -111,25 +109,23 @@ Given,
 <p>Rd=3.48K
 Rss=0.68K
 Iss=0.875mA
-Id=43mA</p>
+Id=0.43mA</p>
 <br>Vdd=3.2V P<=2.8mW Vicm=1.6V Vocm=1.7V Vp=0.6V<br>
 
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
-
- |PARAMETER INCREASED  |EFFECT ON Rd                                             |EFFECT ON Rss                                     |EFFECT ON Vout                                      |EFFECT ON Vin        
+|PARAMETER INCREASED   | EFFECT ON Rd                                             |EFFECT ON Rss                                     |EFFECT ON Vout                                      |EFFECT ON Vin        
                        |EFFECT ON GAIN                                           |
                        
 |----------------------|---------------------------------------------------------|--------------------------------------------------|----------------------------------------------------|-------------------------------------------------|---------------------------------------------------------|
 
-|Vdd                   |No direct effect, but voltage across RD increasing       |No direct effect, but ISS may need adjustment     |Increases (more headroom, higher swing)             |No direct effect, but biasing may shift      |Increases (higher VDD allows a larger RD)|
+|Vdd                   | No direct effect, but voltage across RD increasing      |No direct effect, but ISS may need adjustment     |Increases (more headroom, higher swing)             |No direct effect, but biasing may shift      |Increases (higher VDD allows a larger RD)|
 |RD ↑                  |	—                                                      |No direct effect, but affects current balance     |	Increases (higher gain, larger swing)              |No direct effect	 
                        |Increases (Av = -gm * RD)                                |
 |RSS ↑	               |No direct effect                                         |	—                                               |	Improves CMRR, but excessive RSS may reduce gain	 |Differential input range may reduce             |	Can improve CMRR, but too large RSS reduces gain       |
 |W (Width) ↑           |No direct effect,but higher gm reduces needed RD same Av | No direct effect, but affects bias current       |	May decrease (if lower RD is used)                 | 	Increases input capacitance            |	Increases (since gm increases)                         |
 |L (Length) ↑          |	No direct effect, but increases output resistance      |	No direct effect                                |	Can increase (better channel control)	             |No direct effect, but speed decreases	       |Increases slightly (higher output resistance)            |
 
-IN Simple words:
 <br>More VDD : More Vout, More Gain<br>
 <br>More RD : More Vout, More Gain<br>
 <br>More RSS : Better CMRR, but can reduce gain<br>
@@ -146,6 +142,7 @@ IN Simple words:
 <br>Biasing Circuit (VBIAS):Sets MOSFET operating points.<br>
 
 <h4>Steps for LTSpice Simulation</h4>
+
 <br>Step 1: Design the circuit in LTSpice as per the circuit daigram<br>
 <br>Step 2: Set the input voltage as an AC source.<br>
 <br>Step 3: Run a DC, Transient, and AC Analysis to observe current and signal amplification.<br>
@@ -229,6 +226,7 @@ IN Simple words:
 
 <h3>DC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/ff1e6d91-5d55-4c7d-bc08-fadbf93837c1)
 
 
 
@@ -267,6 +265,8 @@ IN Simple words:
 
 <h3>DC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/5af68060-f852-4183-bf41-3d27f0a1df34)
+
 
 
 
@@ -286,19 +286,37 @@ IN Simple words:
 
 
 
+<h3>Comparison Before & After MOSFET Replacements</h3>
 
-
-
-COMPARISON INFORMATION
-
-
-
-
+|Features                   | Before (RD & ISS)                          | After (MOSFET Active Load & MOSFET ISS)                      |
+|---------------------------|--------------------------------------------|--------------------------------------------------------------|
+|Gain                       | high                                       | Even Higher (MOSFET loads have much higher resistance)
+|CMRR                       |	Good (ISS improves CMRR)	                 | Much Better (MOSFET ISS further improves rejection)
+|Output Swing               |	Limited by RD voltage drop                 |	Better Swing (MOSFET loads adjust dynamically)
+|Power Consumption	        | Moderate (Resistors still consume voltage) | Lower Power (No resistors, more efficient)
+|Bias Stability	            |Stable (ISS provides constant current)      | More Stable (MOSFET ISS further stabilizes current)
+|Speed & Bandwidth          |	Moderate (RD & ISS introduce parasitics)   |	Faster Response (MOSFETs reduce parasitic effects)
+|Design Complexity          |	Moderate (Requires ISS circuit)	           | More Complex (Needs biasing for both MOSFET ISS & active loads)
 
 <h3>RESULT</h3>
+Simulated using LTSpice, simulated the circuit, Vdd=3.2V, 
+  P<=2.8mW        
+  Vicm=1.6V
+  Vocm=1.7V
+  Vp=0.6V <p>Rd=3.48K
+Rss=0.68K
+Iss=0.875mA
+Id=0.43mA
+  Av=10.4</p>
+  <br>theoritically we setted as perfectly same as possible.
 
+Observed differential gain of approximately 10.4dB.
 
+Experimental Observations ( MOSFETs)
 
+The circuit performed as expected, amplifying differential input while rejecting common-mode signals.
+
+Higher gain achieved using current mirror load.
 
 
 
