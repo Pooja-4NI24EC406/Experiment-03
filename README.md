@@ -223,7 +223,7 @@ When we replacing RSS with a current source, the common-mode rejection ratio (CM
 <h4>Max swing=1.558V</h4>
 <h4>Voutmin=0.91V</h4>
 <h4>Voutmax=1.725V</h4>
-<h3>Vincm Analysis</h3>
+
 
 <h3>Vincm Analysis</h3>
 
