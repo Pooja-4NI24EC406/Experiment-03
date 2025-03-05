@@ -176,7 +176,7 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 | W/L (Width/Length) ↑ | Can improve CMRR, but too large RSS reduces gain | No direct effect, but affects bias current | May decrease (if lower RD is used) | Increases input |
 | Capacitance ↑ | Increases (since gm increases) | No direct effect | Can increase (better channel control) | No direct effect, and |
 | Speed decreases | Increases slightly (higher output resistance) | No direct effect | | |
-<br>In simple words:<br>
+
 <br>More VDD : More Vout, More Gain<br>
 <br>More RD : More Vout, More Gain<br>
 <br>More RSS : Better CMRR, but can reduce gain<br>
