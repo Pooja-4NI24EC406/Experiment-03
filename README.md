@@ -122,18 +122,6 @@ Id=0.43mA</p>
 | Capacitance ↑ | Increases (since gm increases) | No direct effect | Can increase (better channel control) | No direct effect, and |
 | Speed decreases | Increases slightly (higher output resistance) | No direct effect | | |
 
-| PARAMETER INCREASED   | EFFECT ON Rd                                            | EFFECT ON Rss                                     | EFFECT ON Vout                                      | EFFECT ON Vin        
-                       | EFFECT ON GAIN                                           |
-                       
-|----------------------|---------------------------------------------------------|--------------------------------------------------|----------------------------------------------------|-------------------------------------------------|---------------------------------------------------------|
-
-|Vdd                   | No direct effect, but voltage across RD increasing      |No direct effect, but ISS may need adjustment     |Increases (more headroom, higher swing)             |No direct effect, but biasing may shift      |Increases (higher VDD allows a larger RD)|
-|RD ↑                  |	—                                                      |No direct effect, but affects current balance     |	Increases (higher gain, larger swing)              |No direct effect	 
-                       |Increases (Av = -gm * RD)                                |
-|RSS ↑	               |No direct effect                                         |	—                                               |	Improves CMRR, but excessive RSS may reduce gain	 |Differential input range may reduce             |	Can improve CMRR, but too large RSS reduces gain       |
-|W (Width) ↑           |No direct effect,but higher gm reduces needed RD same Av | No direct effect, but affects bias current       |	May decrease (if lower RD is used)                 | 	Increases input capacitance            |	Increases (since gm increases)                         |
-|L (Length) ↑          |	No direct effect, but increases output resistance      |	No direct effect                                |	Can increase (better channel control)	             |No direct effect, but speed decreases	       |Increases slightly (higher output resistance)            |||
-
 <br>More VDD : More Vout, More Gain<br>
 <br>More RD : More Vout, More Gain<br>
 <br>More RSS : Better CMRR, but can reduce gain<br>
@@ -182,7 +170,8 @@ Id=0.43mA</p>
 
 ![image](https://github.com/user-attachments/assets/d47373d5-f0be-4c65-80ff-6414871a317b)
 
-
+Ac gain = 20log10(328.9*10^3/99.25*10^3)
+<br>10.406<br>
 
 
 
@@ -220,7 +209,8 @@ Id=0.43mA</p>
 
 ![image](https://github.com/user-attachments/assets/52ae2cde-485f-4538-b1f4-d24dda0be620)
 
-
+Ac gain = 20log10(328.9*10^3/99.25*10^3)
+<br>10.406<br>
 
 
 
@@ -253,7 +243,8 @@ Id=0.43mA</p>
 
 ![image](https://github.com/user-attachments/assets/98fb0bb8-28d4-490a-8e27-8ed34223ec95)
 
-
+Ac gain = 20log10(328.9*10^3/99.25*10^3)
+<br>10.406<br>
 
 
 
