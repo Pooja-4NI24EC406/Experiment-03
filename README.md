@@ -147,10 +147,23 @@ Id=0.43mA</p>
 
 Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <br>10.406<br>
-<br>Vincmmin=1.06V<br>
-<br>Vincmmax=2.156v<br>
-<br>Max swing=1.558V<br>
+<br>Vincm(min)=Vth+Vp<br>
+<br>          =0.36V+0.6V=0.96<br>
+<br>Vincm(max)=Vdd-Rd×Iss/2+Vth<br>
+<br>    =3.2-3436.96×0.875m/2+0.46=2.156V<br>
+<br>max swing  (Vincm(min)-Vincm(max))/2<br>
+<br>0.96-2.156/2=1.558V<br>
 
+<br>Vout(min)=Vov+Vp<br>
+<br>Vov=0.45V.... 0.45+0.36=0.91V<br>
+<br>Vou(max)=Vdd-Id×Rd<br>
+<br>3.2-0.43m×3.43k=1.725V<br>
+
+<br><h4>Vincmmin=1.06V</h4><br>
+<br><h4>Vincmmax=2.156v</h4><br>
+<br><h4>Max swing=1.558V</h4><br>
+<br><h4>Voutmin=0.91V</h4><br>
+<br><h4>Voutmax=1.725V</h4><br>
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
 | PARAMETER INCREASED | EFFECT ON GAIN | EFFECT ON Rss | EFFECT ON Vout | EFFECT ON Vin |
