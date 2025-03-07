@@ -135,6 +135,15 @@ Id=0.43mA</p>
 
 ![image](https://github.com/user-attachments/assets/b4bdb08b-d146-47c8-a1df-6960ef73b312)
 
+
+
+<h3>AC ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/d47373d5-f0be-4c65-80ff-6414871a317b)
+
+Ac gain = 20log10(328.9*10^3/99.25*10^3)
+<br>10.406<br>
+
 <br>Vincm(min)=Vth+Vp<br>
 <br>          =0.36V+0.6V=0.96<br>
 <br>Vincm(max)=Vdd-Rd×Iss/2+Vth<br>
@@ -152,20 +161,13 @@ Id=0.43mA</p>
 <h4>Max swing=1.558V</h4>
 <h4>Voutmin=0.91V</h4>
 <h4>Voutmax=1.725V</h4>
-
 <h3>Vincm Analysis</h3>
 
 ![image](https://github.com/user-attachments/assets/59d99546-3fa6-4090-a94e-797750d2b875)
 
+<h4>AC Analysis</h4>
 
-
-
-<h3>AC ANALYSIS</h3>
-
-![image](https://github.com/user-attachments/assets/d47373d5-f0be-4c65-80ff-6414871a317b)
-
-Ac gain = 20log10(328.9*10^3/99.25*10^3)
-<br>10.406<br>
+![image](https://github.com/user-attachments/assets/706fb2dc-9390-4b2b-ab0a-cf53f5901892)
 
 <h4>ANALYSING the circuit by using LTSpice</h4>
 
@@ -218,17 +220,6 @@ When we replacing RSS with a current source, the common-mode rejection ratio (CM
 
 ![image](https://github.com/user-attachments/assets/c8f6a61d-a717-4fcc-9062-dc455189f017)
 
-<h4>Vincmmin=1.06V</h4>
-<h4>Vincmmax=2.156v</h4>
-<h4>Max swing=1.558V</h4>
-<h4>Voutmin=0.91V</h4>
-<h4>Voutmax=1.725V</h4>
-
-
-<h3>Vincm Analysis</h3>
-
-![image](https://github.com/user-attachments/assets/211d9fc5-ff5c-44f1-af71-ed5388ced160)
-
 
 
 <h3>AC ANALYSIS</h3>
@@ -237,6 +228,19 @@ When we replacing RSS with a current source, the common-mode rejection ratio (CM
 
 Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <br>10.406<br>
+
+<h4>Vincmmin=1.06V</h4>
+<h4>Vincmmax=2.156v</h4>
+<h4>Max swing=1.558V</h4>
+<h4>Voutmin=0.91V</h4>
+<h4>Voutmax=1.725V</h4>
+<h3>Vincm Analysis</h3>
+
+![image](https://github.com/user-attachments/assets/211d9fc5-ff5c-44f1-af71-ed5388ced160)
+
+<h4>AC Analysis</h4>
+
+![image](https://github.com/user-attachments/assets/5962a3fb-f394-4208-bc8a-cb6b34665720)
 
 
 
@@ -263,16 +267,6 @@ When we replace the current source with a MOSFET (acting as an active current so
 
 ![image](https://github.com/user-attachments/assets/0206307b-9589-4af4-8994-18f101411cfe)
 
-<p><h4>Vincmmin=1.06V
-Vincmmax=2.156v
-Max swing=1.558V
-Voutmin=0.91V
-Voutmax=1.725V</h4></p>
-
-<h3>Vincm Analysis</h3>
-
-![image](https://github.com/user-attachments/assets/6775f608-d9df-43d3-a068-819464842942)
-
 
 
 <h3>AC ANALYSIS</h3>
@@ -283,12 +277,19 @@ Ac gain = 20log10(328.9*10^3/99.25*10^3)
 <br>10.406<br>
 
 
+<p><h4>Vincmmin=1.06V
+Vincmmax=2.156v
+Max swing=1.558V
+Voutmin=0.91V
+Voutmax=1.725V</h4></p>
 
+<h3>Vincm Analysis</h3>
 
+![image](https://github.com/user-attachments/assets/6775f608-d9df-43d3-a068-819464842942)
 
+<h4>AC Analysis</h4>
 
-
-
+![image](https://github.com/user-attachments/assets/0de84d54-1128-4a05-b42a-592ebf1cdb0f)
 
 
 
@@ -306,12 +307,14 @@ Replacing ISS with a MOSFET and RD1, RD2 with MOSFETs transforms the differentia
 
 
 
-
-
-
 <h3>TRANSIENT ANALYSIS</h3>
 
 ![image](https://github.com/user-attachments/assets/b28f37c4-ce2b-45c0-af54-9d58b22751de)
+
+
+<h3>AC ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/1a3d2325-9c9f-40a5-9447-0ad37665d975)
 
 <h4>Vincmmin=1.06V</h4>
 <h4>Vincmmax=2.156v</h4>
@@ -323,12 +326,9 @@ Replacing ISS with a MOSFET and RD1, RD2 with MOSFETs transforms the differentia
 
 ![image](https://github.com/user-attachments/assets/b954447d-8d24-48ca-923c-d806273467f4)
 
+<h4>AC Analysis</h4>
 
-<h3>AC ANALYSIS</h3>
-
-![image](https://github.com/user-attachments/assets/1a3d2325-9c9f-40a5-9447-0ad37665d975)
-
-
+![image](https://github.com/user-attachments/assets/0c0f65a2-e141-45d1-9dbe-134c8eed0d4d)
 
 <h3>Comparison Before & After MOSFET Replacements</h3>
 
